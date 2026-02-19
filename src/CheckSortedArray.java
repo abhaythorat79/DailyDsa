@@ -1,5 +1,3 @@
-package Day1;
-
 public class CheckSortedArray {
     public static void main(String[] args) {
 

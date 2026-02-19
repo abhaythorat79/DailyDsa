@@ -1,5 +1,3 @@
-package Day3;
-
 public class MaximumElementArray {
     public static void main(String[] args) {
 
