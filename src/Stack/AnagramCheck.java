@@ -1,6 +1,5 @@
 package Stack;
 
-package String;
 
 public class AnagramCheck {
     public static void main(String[] args) {
