@@ -1,0 +1,36 @@
+Problem Statement
+Develop a Mini Task Management Web Application using Java and
+Spring Boot with database connectivity and frontend integration.
+1. Database Design
+Design a Task table with the following fields:
+•	id (Primary Key)
+•	title (Not Null)
+•	description
+•	priority (LOW / MEDIUM / HIGH)
+•	status (TODO / IN_PROGRESS / DONE)
+•	dueDate (Not Null)
+•	createdAt (Auto Generated)
+•	deleteFlag (for soft delete)
+
+2. Backend Development
+Implement the following REST APIs:
+•	POST /tasks – Create new task.
+•	GET /tasks – Retrieve all tasks.
+•	GET /tasks/{id} – Retrieve task by ID.
+•	DELETE /tasks/{id} – Delete task by ID.
+•	PUT /tasks/{id}/status – Update task status.
+•	GET /tasks/filter?priority=HIGH – Filter by priority.
+•	GET /tasks/overdue – Retrieve overdue tasks (dueDate < today and status not DONE).
+
+*Return meaningful error responses, http status codes,
+add validations and exception handling.
+*You can create any other necessary APIs as per frontend requirements
+3. Frontend Integration
+•	Create a form to add/update a task, with proper validations.
+•	Display all tasks in a tabular format with delete and edit buttons.
+•	Add pagination for listing tasks,
+•	Add filter by priority.
+5. Additional Requirements
+•	Implement deletion of tasks via property (hard delete/ soft delete).
+•	Add search by title and sorting by due date for tasks.
+•	Create custom exception classes and implement request/response object mapping.
