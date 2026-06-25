@@ -18,7 +18,7 @@ public class Seating {
 
             String student=students[seat-1];
 
-            if(students == null || student.trim().isEmpty()){
+            if(student.trim().isEmpty()){
              throw new RuntimeException(("Seat"+ seat + "Cannot be empty"));
             }
             if(!uniqStudent.add(student)){
@@ -27,7 +27,7 @@ public class Seating {
 
             seatingsMap.put(seat, student);
         }
-        System.out.println("Seating Arrangment:");
+        System.out.println("Seating Arrangement:");
 
         for(Map.Entry<Integer, String>entry:
                 seatingsMap.entrySet()){
